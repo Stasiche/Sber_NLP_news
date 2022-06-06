@@ -1,8 +1,8 @@
 # Описание решения
 
-В main.py представлен код для обучения модели, в inference.py для получения предсказания, в main.ipynb предварительный анализ данных и запуск пердсказания.
+В [main.py](https://github.com/Stasiche/Sber_NLP_news/blob/master/main.py) представлен код для обучения модели, в [inference.py](https://github.com/Stasiche/Sber_NLP_news/blob/master/inference.py) для получения предсказания, в [main.ipynb](https://github.com/Stasiche/Sber_NLP_news/blob/master/main.ipynb) предварительный анализ данных и запуск пердсказания.
 
-Файл data/submision.csv содержит ответ на задание. Дополнительные столбцы 'prob_mean', 'prob_mean_per_pos', 'prob_max' содержат соотвественно информацию о:
+Файл [data/submision.csv](https://github.com/Stasiche/Sber_NLP_news/blob/master/data/submission.csv) содержит ответ на задание. Дополнительные столбцы 'prob_mean', 'prob_mean_per_pos', 'prob_max' содержат соотвественно информацию о:
 
 1. средней вероятности позитивного класса
 2. средней вероятности среди значений, выше трешхолда 0.5
@@ -24,5 +24,5 @@
 все предложения негативного класса становятся неотличимы. Частично эту проблему решает взятие максимума (prob_max) среди предсказанных вероятностей, однако
 такая оценка является слишком точечной. 
 
-Как показал анализ результирующего файла data/submission.csv, сортировка именно по prob_max является наиболее информативной, однако для полноты картины рекомендуется
+Как показал анализ результирующего файла [data/submision.csv](https://github.com/Stasiche/Sber_NLP_news/blob/master/data/submission.csv), сортировка именно по prob_max является наиболее информативной, однако для полноты картины рекомендуется
 учитывать во внимание все три столбца.
